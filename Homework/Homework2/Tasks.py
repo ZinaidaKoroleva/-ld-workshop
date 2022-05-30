@@ -34,23 +34,23 @@
 
 # 3.	В заданном списке вещественных чисел найдите разницу между максимальным и минимальным значением дробной части элементов. 
 # Пример: [1.1, 1.2, 3.1, 5, 10.01] => 0.19
-def subtraction(list):
-    fractional_parts = []
-    for i in range(0,len(list)):
-        fractional_parts.append(int((list[i]*100)%100))
-    max = fractional_parts[0]
-    min = fractional_parts[0]
-    for i in range(1,len(list)):
-        if fractional_parts[i]>max:
-            max = fractional_parts[i]
-        if  fractional_parts[i] != 0 and fractional_parts[i]<min:
-            min = fractional_parts[i]
-    subtraction = (max - min)/100
-    print(f"Разница между максимальным и минимальным значением дробной части элементов равна {subtraction}")
+# def subtraction(list):
+#     fractional_parts = []
+#     for i in range(0,len(list)):
+#         fractional_parts.append(int((list[i]*100)%100))
+#     max = fractional_parts[0]
+#     min = fractional_parts[0]
+#     for i in range(1,len(list)):
+#         if fractional_parts[i]>max:
+#             max = fractional_parts[i]
+#         if  fractional_parts[i] != 0 and fractional_parts[i]<min:
+#             min = fractional_parts[i]
+#     subtraction = (max - min)/100
+#     print(f"Разница между максимальным и минимальным значением дробной части элементов равна {subtraction}")
      
-list_example = [1.1, 1.2, 3.1, 5, 10.01]
-print(list_example)
-subtraction(list_example)
+# list_example = [1.1, 1.2, 3.1, 5, 10.01]
+# print(list_example)
+# subtraction(list_example)
 # 4.	Написать программу преобразования десятичного числа в двоичное
 
 # def bin(n):
