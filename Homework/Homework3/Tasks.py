@@ -56,3 +56,30 @@
 
 # + на тему файловой системы:
 # 5.  Дан текстовый файл, содержащий целые числа. Удалить из него все четные числа. 
+
+# def delete_even_numbers():
+#     with open(r'C:\Users\shymk\OneDrive\Рабочий стол\python\Homework\Homework3\file.txt', 'r') as fp:
+#         list = fp.readlines()
+#         for i in range(len(list)):
+#              list[i] = int(list[i])
+#         print(list)
+
+# # Выясняем длину нового списка
+#         count = 0
+#         for i in range(len(list)):
+#             if list[i] % 2 == 0:
+#                 count += 1 
+
+#         length = len(list) - count
+#         for i in range(length):
+#             if list[i] % 2 == 0:
+#                 del list[i]
+#         print(list)
+#     list_write = " ".join(map(str,list))
+#     with open(r'C:\Users\shymk\OneDrive\Рабочий стол\python\Homework\Homework3\file.txt', 'w') as fp:
+#         fp.write(list_write)
+
+# delete_even_numbers()
+
+
+    
