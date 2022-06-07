@@ -31,7 +31,7 @@
 #  [5, 2, 3, 4, 6, 1, 7] => [2, 3, 4, 6, 7]
 #  Порядок элементов менять нельзя
 
-list_of_numbers = [5, 2, 3, 4, 6, 1, 7]
+list_of_numbers = [1, 5, 2, 3, 4, 6, 1, 7]
 sorted_list = []
 
 if list_of_numbers[0] < list_of_numbers[1]:
@@ -43,21 +43,7 @@ for i in range(2,len(list_of_numbers)):
         sorted_list.append(list_of_numbers[i])
 
     if list_of_numbers[i] < list_of_numbers[i-1] and list_of_numbers[i] > list_of_numbers[i-2]:
-            # sorted_list.pop([])
+            sorted_list.pop()
             sorted_list.append(list_of_numbers[i])
 
 print(sorted_list)
-
-# list_of_numbers = [1, 5, 2, 3, 4, 6, 1, 7]
-
-# if list_of_numbers[0] > list_of_numbers[1]:
-#     list_of_numbers.pop(list_of_numbers[0])
-
-# for i in range(2,len(list_of_numbers)):
-    
-#     if (list_of_numbers[i] < list_of_numbers[i-1]) and (list_of_numbers[i] > list_of_numbers[i-2]):
-#         list_of_numbers.pop([i-1])
-#         i = i-1
-            
-
-# print(list_of_numbers)
