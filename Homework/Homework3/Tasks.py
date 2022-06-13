@@ -1,20 +1,20 @@
 # 1.	Найти НОК двух чисел
-# def aliquot(a,b):
-#     if a > b:
-#         max = a
-#     else:
-#         max = b
-#     while True:
-#         if max % a == 0 and max % b == 0:
-#             aliquot = max
-#             break
-#         max += 1
-#     return aliquot
+def aliquot(a,b):
+    if a > b:
+        max = a
+    else:
+        max = b
+    while True:
+        if max % a == 0 and max % b == 0:
+            aliquot = max
+            break
+        max += 1
+    return aliquot
 
-# number_one = 12
-# number_two = 13
+number_one = 12
+number_two = 13
 
-# print("Наименьшее общее кратное: " , aliquot(number_one,number_two))
+print("Наименьшее общее кратное: " , aliquot(number_one,number_two))
 
 # 2.	Вычислить число Пи c заданной точностью d
 # Пример: при d = 0.001,  c= 3.141. 
