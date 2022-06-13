@@ -35,8 +35,20 @@ def code(input_string):
         code_string += letter
     return code_string
 
+def decode(input_string):
+    code_string = ''
+    alphabet = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя'
+    for symb in input_string:
+        ind = alphabet.find(symb.lower())
+        if ind != -1:
+            letter = alphabet[(ind - 13)%len(alphabet)]
+        else:
+            letter = symb
+        code_string += letter
+    return code_string
+
 code_text = 'Карл у клары украл кораллы'
-decipher_text = 'ннррввлвд'
+decipher_text = 'чмэш а чшмэз ачэмш чыэмшшз'
 
 print(code(code_text))               
-print(code(code(code_text)))
+print(decode(decipher_text))
